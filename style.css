@@ -153,16 +153,32 @@ a.more-link {
   display: none;
 }
 
+@media only screen and (max-width: 781px) {
+  /* -- Utility -- */
+
+  .is-style-hidden-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 781px) {
+  /* -- Utility -- */
+
+  .is-style-hidden-destok {
+    display: none !important;
+  }
+}
+
 .bullet {
   width: 20px;
-  height: 20px;
+  height: 5px;
   border-radius: 50%;
   background-color: #ff2a00;
 }
 
 .florence-gradient {
-  width: 500px;
-  height: 5px;
+  width: auto;
+  height: 3px;
   border-radius: 50px;
   background: #ff0d00;
   background: linear-gradient(-0deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
@@ -171,4 +187,18 @@ a.more-link {
     #ff0d00 0%,
     rgba(60, 51, 80, 0) 100%
   );
+}
+
+/* Details arrow  */
+.wp-block-details summary::marker {
+  color: var(--wp--preset--color--primary);
+  margin-right: 5px;
+}
+
+/* No submenu in mobile  */
+@media only screen and (max-width: 600px) {
+  .wp-block-navigation:not(.has-background)
+    .wp-block-navigation__submenu-container {
+    display: none;
+  }
 }

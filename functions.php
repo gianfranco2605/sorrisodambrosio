@@ -218,12 +218,13 @@ function template_part_areas(array $areas)
 }
 add_filter('default_wp_template_part_areas', __NAMESPACE__ . '\template_part_areas');
 
-// scripts
 function enqueue_script_sheet()
 {
+	// Enqueue your main custom script
+	wp_enqueue_script('your-main-script-handle', get_template_directory_uri() . '/src/js/main.js', array(), wp_get_theme()->get('Version'), true);
 
-	// Enqueue additional scripts
-	wp_enqueue_script(sanitize_title(__NAMESPACE__), 'https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js', array(), '2.0.2', true);
+	// Enqueue anime.js library
+	wp_enqueue_script('anime-js', 'https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js', array(), '2.0.2', true);
 }
 
 // Enqueue custom scripts
