@@ -142,7 +142,7 @@
         {
           "name": "Base",
           "slug": "base",
-          "color": "#fff"
+          "color": "#fcfcfc"
         }
       ],
       "link": true

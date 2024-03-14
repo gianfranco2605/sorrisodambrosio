@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Title: Footer
  * Slug: footer
@@ -11,128 +12,101 @@
  * Inserter: true
  */
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large","right":"var:preset|spacing|medium","left":"var:preset|spacing|medium"},"margin":{"top":"0px"},"blockGap":"var:preset|spacing|x-large"},"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"backgroundColor":"main","textColor":"base","className":"dark-footer","layout":{"inherit":true,"type":"constrained"}} -->
-<div class="wp-block-group alignfull dark-footer has-base-color has-main-background-color has-text-color has-background has-link-color" style="margin-top:0px;padding-top:var(--wp--preset--spacing--xx-large);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--xx-large);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|x-large","left":"var:preset|spacing|x-large"}}}} -->
-<div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} -->
-<p style="font-style:normal;font-weight:600">Ride with Ollie</p>
-<!-- /wp:paragraph -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|small","right":"var:preset|spacing|medium","left":"var:preset|spacing|medium"},"margin":{"top":"0px"},"blockGap":"var:preset|spacing|x-large"},"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"backgroundColor":"main","textColor":"base","layout":{"inherit":true,"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-base-color has-main-background-color has-text-color has-background has-link-color" style="margin-top:0px;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|x-large","left":"var:preset|spacing|x-large"},"padding":{"top":"0","bottom":"0"},"margin":{"top":"0","bottom":"0"}}}} -->
+    <div class="wp-block-columns alignwide" style="margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0"><!-- wp:column -->
+        <div class="wp-block-column"><!-- wp:site-logo {"width":150,"align":"center"} /-->
 
-<!-- wp:paragraph {"textColor":"main-accent","fontSize":"small"} -->
-<p class="has-main-accent-color has-text-color has-small-font-size">Easily create beautiful, fully-customizable websites with the new WordPress Site Editor and the Ollie block theme. No coding skills required. Download for free today!</p>
-<!-- /wp:paragraph -->
+            <!-- wp:paragraph {"align":"center","textColor":"main-accent","fontSize":"small"} -->
+            <p class="has-text-align-center has-main-accent-color has-text-color has-small-font-size">Lungotevere Flaminio 34 - 00196, Roma</p>
+            <!-- /wp:paragraph -->
 
-<!-- wp:social-links {"iconColor":"main","iconColorValue":"#150E29","iconBackgroundColor":"base","iconBackgroundColorValue":"#fff","style":{"spacing":{"blockGap":{"top":"20px","left":"20px"}}},"className":"is-style-default","layout":{"type":"flex","justifyContent":"left"}} -->
-<ul class="wp-block-social-links has-icon-color has-icon-background-color is-style-default"><!-- wp:social-link {"url":"#","service":"twitter"} /-->
+            <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"}} -->
+            <div class="wp-block-group"><!-- wp:paragraph {"align":"center"} -->
+                <p class="has-text-align-center">Tel: <a href="tel:063225754">+39 06 322 57454</a>&nbsp;</p>
+                <!-- /wp:paragraph -->
 
-<!-- wp:social-link {"url":"#","service":"instagram"} /-->
+                <!-- wp:paragraph {"align":"center"} -->
+                <p class="has-text-align-center">&nbsp;<a href="tel:063610625">+39 06 361 0625</a></p>
+                <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
 
-<!-- wp:social-link {"url":"#","service":"linkedin"} /-->
+            <!-- wp:paragraph {"align":"center"} -->
+            <p class="has-text-align-center"><a href="mailto:studio@sorrisodambrosio.it">studio@sorrisodambrosio.it</a></p>
+            <!-- /wp:paragraph -->
 
-<!-- wp:social-link {"url":"#","service":"facebook"} /--></ul>
-<!-- /wp:social-links --></div>
-<!-- /wp:column -->
+            <!-- wp:social-links {"iconColor":"main","iconColorValue":"#150E29","iconBackgroundColor":"base","iconBackgroundColorValue":"#fff","align":"center","style":{"spacing":{"blockGap":{"top":"20px","left":"20px"}}},"className":"is-style-default","layout":{"type":"flex","justifyContent":"center"}} -->
+            <ul class="wp-block-social-links aligncenter has-icon-color has-icon-background-color is-style-default"><!-- wp:social-link {"url":"https://api.whatsapp.com/send/?phone=3755524596\u0026text\u0026type=phone_number\u0026app_absent=0","service":"whatsapp"} /-->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} -->
-<p style="font-style:normal;font-weight:600">Company</p>
-<!-- /wp:paragraph -->
+                <!-- wp:social-link {"url":"#","service":"instagram"} /-->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"textColor":"main-accent","layout":{"type":"constrained"},"fontSize":"small"} -->
-<div class="wp-block-group has-main-accent-color has-text-color has-small-font-size"><!-- wp:paragraph -->
-<p>About</p>
-<!-- /wp:paragraph -->
+                <!-- wp:social-link {"url":"#","service":"facebook"} /-->
+            </ul>
+            <!-- /wp:social-links -->
+        </div>
+        <!-- /wp:column -->
 
-<!-- wp:paragraph -->
-<p>Careers</p>
-<!-- /wp:paragraph -->
+        <!-- wp:column -->
+        <div class="wp-block-column"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+            <p class="has-text-align-center has-large-font-size">I Nostri Orari</p>
+            <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>Brand Assets</p>
-<!-- /wp:paragraph -->
+            <!-- wp:table {"hasFixedLayout":true} -->
+            <figure class="wp-block-table">
+                <table class="has-fixed-layout">
+                    <thead>
+                        <tr>
+                            <th class="has-text-align-center" data-align="center">Giorno</th>
+                            <th class="has-text-align-center" data-align="center">Mattina</th>
+                            <th class="has-text-align-center" data-align="center">Pomeriggio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center">Lunedi</td>
+                            <td class="has-text-align-center" data-align="center">9:00 - 13:00</td>
+                            <td class="has-text-align-center" data-align="center">14:00 - 19:00<br></td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center">Martedi</td>
+                            <td class="has-text-align-center" data-align="center">9:00 - 13:00</td>
+                            <td class="has-text-align-center" data-align="center">Chiuso</td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center">Mercoledì</td>
+                            <td class="has-text-align-center" data-align="center">9:00 - 13:00</td>
+                            <td class="has-text-align-center" data-align="center">14:00 - 19:00<br></td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center">Giovedì</td>
+                            <td class="has-text-align-center" data-align="center">9:00 - 13:00<br></td>
+                            <td class="has-text-align-center" data-align="center">14:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center">Venerdì</td>
+                            <td class="has-text-align-center" data-align="center">9:00 - 13:00</td>
+                            <td class="has-text-align-center" data-align="center">14:00 - 19:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <figcaption class="wp-element-caption">Sabato-Domenica chiuso</figcaption>
+            </figure>
+            <!-- /wp:table -->
+        </div>
+        <!-- /wp:column -->
+    </div>
+    <!-- /wp:columns -->
 
-<!-- wp:paragraph -->
-<p>Contact</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column -->
+    <!-- wp:separator {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small"}}},"backgroundColor":"secondary","className":"is-style-separator-dotted"} -->
+    <hr class="wp-block-separator alignwide has-text-color has-secondary-color has-alpha-channel-opacity has-secondary-background-color has-background is-style-separator-dotted" style="margin-top:var(--wp--preset--spacing--small);margin-bottom:var(--wp--preset--spacing--small)" />
+    <!-- /wp:separator -->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} -->
-<p style="font-style:normal;font-weight:600">Resources</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"textColor":"main-accent","layout":{"type":"constrained"},"fontSize":"small"} -->
-<div class="wp-block-group has-main-accent-color has-text-color has-small-font-size"><!-- wp:paragraph -->
-<p>Blog</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Contact</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Support Docs</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Get Help</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column -->
-
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} -->
-<p style="font-style:normal;font-weight:600">Product</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"textColor":"main-accent","layout":{"type":"constrained"},"fontSize":"small"} -->
-<div class="wp-block-group has-main-accent-color has-text-color has-small-font-size"><!-- wp:paragraph -->
-<p>Features</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Pricing</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Use Cases</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Demo</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns -->
-
-<!-- wp:separator {"align":"wide","backgroundColor":"secondary","className":"is-style-separator-dotted"} -->
-<hr class="wp-block-separator alignwide has-text-color has-secondary-color has-alpha-channel-opacity has-secondary-background-color has-background is-style-separator-dotted"/>
-<!-- /wp:separator -->
-
-<!-- wp:group {"align":"wide"} -->
-<div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"},"elements":{"link":{"color":{"text":"var:preset|color|main-accent"}}}},"textColor":"main-accent","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group has-main-accent-color has-text-color has-link-color"><!-- wp:paragraph {"fontSize":"x-small"} -->
-<p class="has-x-small-font-size">© 2023 · Powered by WordPress and <a href="https://olliewp.com">Ollie</a></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"flex","flexWrap":"nowrap"},"fontSize":"x-small"} -->
-<div class="wp-block-group has-x-small-font-size"><!-- wp:paragraph -->
-<p>Download</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Visit Ollie</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Visit Mike</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
+    <!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small"}}}} -->
+    <div class="wp-block-group alignwide" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small)"><!-- wp:paragraph {"align":"center","fontSize":"x-small"} -->
+        <p class="has-text-align-center has-x-small-font-size">©Copyright 2024 -&nbsp;<a href="https://digitalnavas.it/">Made by DigitalNavas</a></p>
+        <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+</div>
 <!-- /wp:group -->

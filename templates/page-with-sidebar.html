@@ -1,12 +1,135 @@
-<!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header"} /-->
+<!-- wp:template-part {"slug":"header","theme":"sorrisodambrosio","tagName":"header","className":"site-header"} /-->
 
-<!-- wp:group {"tagName":"main","align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"}}},"layout":{"type":"constrained"}} -->
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|large"}},"dimensions":{"minHeight":""}},"layout":{"type":"constrained"}} -->
+<div
+  class="wp-block-group"
+  style="margin-top: 0; margin-bottom: var(--wp--preset--spacing--large)"
+>
+  <!-- wp:cover {"useFeaturedImage":true,"dimRatio":70,"overlayColor":"main","focalPoint":{"x":0.5,"y":0.31},"minHeight":90,"minHeightUnit":"vh","contentPosition":"center center","align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"bottom":"0","top":"0","right":"0","left":"0"}},"color":[]},"className":"is-style-blur-image is-style-blur-image-less waves-hero-services "} -->
+  <div
+    class="wp-block-cover alignfull is-style-blur-image is-style-blur-image-less waves-hero-services"
+    style="
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+      min-height: 90vh;
+    "
+  >
+    <span
+      aria-hidden="true"
+      class="wp-block-cover__background has-main-background-color has-background-dim-70 has-background-dim"
+    ></span>
+    <div class="wp-block-cover__inner-container">
+      <!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"0px","bottom":"0px"},"padding":{"top":"var:preset|spacing|xx-large","bottom":"0px","right":"var:preset|spacing|medium","left":"var:preset|spacing|medium"},"blockGap":"0px"},"dimensions":{"minHeight":"80vh"}},"textColor":"base","layout":{"inherit":true,"type":"constrained"}} -->
+      <div
+        class="wp-block-group alignfull has-base-color has-text-color"
+        style="
+          min-height: 80vh;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          padding-top: var(--wp--preset--spacing--xx-large);
+          padding-right: var(--wp--preset--spacing--medium);
+          padding-bottom: 0px;
+          padding-left: var(--wp--preset--spacing--medium);
+        "
+      >
+        <!-- wp:group {"style":{"spacing":{"padding":{"bottom":"0"},"margin":{"top":"var:preset|spacing|small"},"blockGap":"10px"}}} -->
+        <div
+          class="wp-block-group"
+          style="
+            margin-top: var(--wp--preset--spacing--small);
+            padding-bottom: 0;
+          "
+        >
+          <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
+          <div class="wp-block-group">
+            <!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"textColor":"main-accent","fontSize":"small"} -->
+            <p
+              class="has-text-align-center has-main-accent-color has-text-color has-small-font-size"
+              style="font-style: normal; font-weight: 500"
+            >
+              Sorriso D'Ambrosio
+            </p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->
+            <div class="wp-block-query">
+              <!-- wp:post-template -->
+              <!-- wp:post-title {"textAlign":"center","level":1,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} /-->
+              <!-- /wp:post-template -->
+            </div>
+            <!-- /wp:query -->
+          </div>
+          <!-- /wp:group -->
+
+          <!-- wp:paragraph {"align":"center","textColor":"main-accent"} -->
+          <p class="has-text-align-center has-main-accent-color has-text-color">
+            Easily create beautiful, fully-customizable websites with the new
+            WordPress Site Editor and the Ollie block theme. No coding skills
+            required.
+          </p>
+          <!-- /wp:paragraph -->
+
+          <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|small","margin":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small"}}}} -->
+          <div
+            class="wp-block-buttons"
+            style="
+              margin-top: var(--wp--preset--spacing--small);
+              margin-bottom: var(--wp--preset--spacing--small);
+            "
+          >
+            <!-- wp:button {"style":{"spacing":{"padding":{"left":"var:preset|spacing|medium","right":"var:preset|spacing|medium","top":"var:preset|spacing|small","bottom":"var:preset|spacing|small"}}}} -->
+            <div class="wp-block-button">
+              <a
+                class="wp-block-button__link wp-element-button"
+                style="
+                  padding-top: var(--wp--preset--spacing--small);
+                  padding-right: var(--wp--preset--spacing--medium);
+                  padding-bottom: var(--wp--preset--spacing--small);
+                  padding-left: var(--wp--preset--spacing--medium);
+                "
+                >Contatti</a
+              >
+            </div>
+            <!-- /wp:button -->
+
+            <!-- wp:button {"textColor":"base","style":{"color":{"background":"#64648269"},"spacing":{"padding":{"left":"var:preset|spacing|medium","right":"var:preset|spacing|medium","top":"var:preset|spacing|small","bottom":"var:preset|spacing|small"}}},"className":"is-style-fill"} -->
+            <div class="wp-block-button is-style-fill">
+              <a
+                class="wp-block-button__link has-base-color has-text-color has-background wp-element-button"
+                style="
+                  background-color: #64648269;
+                  padding-top: var(--wp--preset--spacing--small);
+                  padding-right: var(--wp--preset--spacing--medium);
+                  padding-bottom: var(--wp--preset--spacing--small);
+                  padding-left: var(--wp--preset--spacing--medium);
+                "
+                >Chi Siamo</a
+              >
+            </div>
+            <!-- /wp:button -->
+          </div>
+          <!-- /wp:buttons -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+  </div>
+  <!-- /wp:cover -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"main","align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"0","bottom":"var:preset|spacing|xx-large"}}},"layout":{"type":"constrained"}} -->
 <main
   class="wp-block-group alignwide"
   style="
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: var(--wp--preset--spacing--xx-large);
+    padding-top: 0;
     padding-bottom: var(--wp--preset--spacing--xx-large);
   "
 >
@@ -15,23 +138,22 @@
     class="wp-block-columns alignwide"
     style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0"
   >
-    <!-- wp:column {"width":"66.66%"} -->
-    <div class="wp-block-column" style="flex-basis: 66.66%">
-      <!-- wp:post-title {"level":1,"fontSize":"xx-large","fontFamily":"secondary"} /-->
-
-      <!-- wp:group {"layout":{"type":"constrained"}} -->
-      <div class="wp-block-group">
-        <!-- wp:post-featured-image {"align":"wide","style":{"color":{"duotone":"unset"},"spacing":{"margin":{"top":"var:preset|spacing|large","right":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large"}}}} /-->
-      </div>
-      <!-- /wp:group -->
-
+    <!-- wp:column {"width":"66.66%","style":{"spacing":{"padding":{"top":"0","bottom":"0"}}}} -->
+    <div
+      class="wp-block-column"
+      style="padding-top: 0; padding-bottom: 0; flex-basis: 66.66%"
+    >
       <!-- wp:post-content {"align":"wide","layout":{"type":"default"}} /-->
     </div>
     <!-- /wp:column -->
 
     <!-- wp:column {"width":"33.33%"} -->
     <div class="wp-block-column" style="flex-basis: 33.33%">
-      <!-- wp:template-part {"slug":"sidebar"} /-->
+      <!-- wp:group {"style":{"position":{"type":"sticky","top":"0px"}},"layout":{"type":"constrained"}} -->
+      <div class="wp-block-group">
+        <!-- wp:template-part {"slug":"sidebar","theme":"sorrisodambrosio"} /-->
+      </div>
+      <!-- /wp:group -->
     </div>
     <!-- /wp:column -->
   </div>
@@ -39,4 +161,4 @@
 </main>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer"} /-->
+<!-- wp:template-part {"slug":"footer","theme":"sorrisodambrosio","tagName":"footer","className":"site-footer"} /-->
