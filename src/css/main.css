@@ -1,0 +1,324 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+b,
+strong {
+  font-weight: var(--wp--custom--font-weight--semi-bold);
+}
+
+ol,
+ul {
+  padding: 0;
+}
+
+ol:where(:not([class*="wp-block"])),
+ol:where(.wp-block-list),
+ul:where(:not([class*="wp-block"])),
+ul:where(.wp-block-list) {
+  padding-inline-start: var(--wp--preset--spacing--medium);
+}
+
+div[class*="wp-block-"] figcaption {
+  color: var(--wp--preset--color--base);
+  font-size: var(--wp--preset--font-size--x-small);
+  margin-bottom: 0;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Standardize form styling
+--------------------------------------------- */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+input[type="button"],
+input[type="email"],
+input[type="search"],
+input[type="submit"],
+input[type="text"],
+textarea {
+  -webkit-appearance: none;
+}
+
+input:not([type="submit"]),
+select,
+textarea,
+.wp-block-post-comments-form input:not([type="submit"]):not([type="checkbox"]),
+.wp-block-post-comments-form textarea {
+  color: var(--wp--preset--color--main);
+  border-radius: 5px;
+  border: solid 1px var(--wp--preset--color--main-accent);
+  padding: 0.5em 1em;
+  font-size: var(--wp--preset--font-size--small);
+  width: 100%;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline-color: var(--wp--preset--color--primary);
+}
+
+input[type="checkbox"],
+input[type="image"],
+input[type="radio"] {
+  width: auto;
+}
+
+label {
+  width: 100%;
+  display: block;
+}
+
+::placeholder {
+  color: var(--wp--preset--color--secondary);
+  font-size: var(--wp--preset--font-size--small);
+  opacity: 0.75;
+}
+
+.has-base-background-color {
+  background-color: #fff !important;
+}
+
+/* Helper styles that can't be done via theme.json
+---------------------------------------------------------------------------- */
+
+a.more-link {
+  display: block;
+}
+
+/* Inline code */
+*:not(.wp-block-code) > code {
+  background-color: var(--wp--preset--color--tertiary);
+  font-weight: var(--wp--custom--font-weight--medium);
+  padding: 3px 5px;
+  position: relative;
+  border-radius: 3px;
+}
+
+/* Adjust terms at bottom of posts */
+.single .wp-block-group .wp-block-post-terms,
+.blog .wp-block-group .wp-block-post-terms {
+  margin-bottom: -8px !important;
+}
+
+/* Remove margin on term description on archive pages */
+.wp-block-term-description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Remove last separator on post list */
+.remove-border-and-padding
+  .wp-block-post-template
+  li:last-child
+  .wp-block-separator {
+  display: none;
+}
+
+/* Hide post meta div if no tags assigned */
+.single .wp-block-group:has(> .post-meta:empty) {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  /* -- Utility -- */
+
+  .is-style-hidden-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* -- Utility -- */
+
+  .is-style-hidden-destok {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 782px) {
+  /* -- Columns -- */
+
+  .is-style-columns-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+.bullet {
+  width: 20px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #ff2a00;
+}
+
+.florence-gradient {
+  width: auto;
+  height: 3px;
+  border-radius: 50px;
+  background: #ff0d00;
+  background: linear-gradient(-0deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+    -0deg,
+    #ff0d00 0%,
+    rgba(60, 51, 80, 0) 100%
+  );
+}
+
+/* Details arrow  */
+.wp-block-details summary::marker {
+  color: var(--wp--preset--color--primary);
+  margin-right: 5px;
+}
+
+/* No submenu in mobile  */
+@media only screen and (max-width: 600px) {
+  .wp-block-navigation:not(.has-background)
+    .wp-block-navigation__submenu-container {
+    display: none;
+  }
+}
+
+.waves-hero-services::after {
+  background-image: url(../../patterns/images/waves.svg);
+  background-position: bottom -1px left;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  min-height: auto;
+  pointer-events: none;
+}
+
+.img[data-dominant-color]:not(.has-transparency) {
+  background-color: #fff !important;
+}
+
+/* CSS */
+.wp-block-button {
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+}
+
+.wp-block-button:hover {
+  transform: translateY(-2px);
+}
+
+.wp-block-button:active {
+  transform: translateY(0);
+}
+
+.wp-block-button__link:hover {
+  text-decoration: none;
+}
+
+.wp-block-navigation-item__content:hover {
+  text-decoration: none !important;
+}
+
+/* Border bottom menu effect */
+@media (min-width: 600px) {
+  .wp-block-navigation-item.wp-block-navigation-link
+    > .wp-block-navigation-item__content::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #1262fa;
+    transition: width 0.3s ease-in-out;
+    transform: translateX(-50%);
+  }
+
+  .wp-block-navigation-item.wp-block-navigation-link:hover
+    > .wp-block-navigation-item__content::before {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  table.has-fixed-layout thead tr th:nth-child(3) {
+    font-size: 12px !important;
+  }
+
+  table.has-fixed-layout tbody tr td:nth-child(1) {
+    font-size: 15px !important;
+  }
+}
+
+/* Servizes font responsive */
+@media only screen and (min-width: 600px) and (max-width: 1052px) {
+  .services-columns h4 {
+    font-size: 18px;
+  }
+}
+
+/* Nav bar z-index */
+.nav-sidebar-pages {
+  z-index: 9999;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-footer {
+    width: 100px;
+  }
+  .logo-menu {
+    width: 150px;
+  }
+}
+
+/* Vertical */
+.cardY {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.5s, transform 1.5s;
+}
+
+.cardY.showY {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Horizontall */
+.cardX {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s, transform 1.5s;
+}
+
+.cardX.showX {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.wp-block-navigation .has-child .wp-block-navigation__submenu-container {
+  transition: opacity 0.8s ease, visibility 0.8s ease !important;
+}

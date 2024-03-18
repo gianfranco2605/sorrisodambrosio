@@ -6,11 +6,6 @@
   overflow: hidden;
 }
 
-.is-style-blur-image-less > .wp-block-cover__image-background,
-.is-style-blur-image-more > .wp-block-cover__image-background {
-  transform: scale(1.5);
-}
-
 .is-style-blur-image-less > .wp-block-cover__image-background {
   filter: blur(2px);
 }

@@ -31,8 +31,14 @@ add_action('after_setup_theme', __NAMESPACE__ . '\setup');
  */
 function enqueue_style_sheet()
 {
-	wp_enqueue_style(sanitize_title(__NAMESPACE__), get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get('Version'));
+
+	// Get the modification time of your custom stylesheet
+	$custom_stylesheet_version = filemtime(get_template_directory() . '/dist/main.bundle.css');
+
+	// Enqueue your custom stylesheet with file modification time as version
+	wp_enqueue_style('custom-stylesheet', get_template_directory_uri() . '/dist/main.bundle.css', array(), $custom_stylesheet_version);
 }
+
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_style_sheet');
 
 
@@ -221,7 +227,7 @@ add_filter('default_wp_template_part_areas', __NAMESPACE__ . '\template_part_are
 function enqueue_script_sheet()
 {
 	// Enqueue your main custom script
-	wp_enqueue_script('your-main-script-handle', get_template_directory_uri() . '/src/js/main.js', array(), wp_get_theme()->get('Version'), true);
+	wp_enqueue_script('your-main-script-handle', get_template_directory_uri() . '/dist/main.bundle.js', array(), wp_get_theme()->get('Version'), true);
 
 	// Enqueue anime.js library
 	wp_enqueue_script('anime-js', 'https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js', array(), '2.0.2', true);

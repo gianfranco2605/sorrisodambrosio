@@ -24,4 +24,38 @@ document.addEventListener("DOMContentLoaded", function () {
         delay: 1000,
       });
   });
+  // Function to check card visibility and add class
+  function checkCardVisibility(cards, className, verticalOnly = false) {
+    cards.forEach((card, index) => {
+      const cardPosition = card.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      const visibleThreshold = 1.5; // Adjust this value as needed
+
+      // Calculate the threshold position
+      const threshold = windowHeight * visibleThreshold;
+
+      // If a significant portion of the card is within the viewport
+      if (!verticalOnly || card.classList.contains("cardY")) {
+        if (cardPosition < threshold) {
+          setTimeout(() => {
+            card.classList.add(className);
+          }, index * 400); // Adjust the delay as needed
+        }
+      }
+    });
+  }
+
+  // Vertically
+  const cardsY = document.querySelectorAll(".cardY");
+  checkCardVisibility(cardsY, "showY", true); // Only consider vertical cards
+
+  // Horizontally
+  const cardsX = document.querySelectorAll(".cardX");
+  checkCardVisibility(cardsX, "showX"); // Regular check for horizontal cards
+
+  // Check again as the user scrolls
+  window.addEventListener("scroll", function () {
+    checkCardVisibility(cardsY, "showY", true); // Only consider vertical cards
+    checkCardVisibility(cardsX, "showX"); // Regular check for horizontal cards
+  });
 });
